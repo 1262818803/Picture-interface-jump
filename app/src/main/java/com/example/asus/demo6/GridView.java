@@ -1,10 +1,8 @@
 package com.example.asus.demo6;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.SimpleAdapter;
@@ -44,11 +42,11 @@ public class GridView extends AppCompatActivity {
 
     void initData() {
         //图标
-        int icno[] = {R.drawable.apple, R.drawable.banana,
-                R.drawable.orange, R.drawable.watermelon, R.drawable.grape, R.drawable.pear,
+        int icno[] = {R.drawable.timg1, R.drawable.timg2,
+                R.drawable.timg3, R.drawable.watermelon, R.drawable.grape, R.drawable.pear,
                 R.drawable.pineaoole, R.drawable.strawberry };
         //图标下的文字
-        String name[]={"apple","banana","Item3","Item4","Item5","Item6","Item7","Item8","Item9"};
+        String name[]={"游玩景点","美食街","公共厕所","Item4","Item5","Item6","Item7","Item8","Item9"};
         dataList = new ArrayList<Map<String, Object>>();
         for (int i = 0; i <icno.length; i++) {
             Map<String, Object> map=new HashMap<String, Object>();
@@ -67,8 +65,8 @@ public class GridView extends AppCompatActivity {
     }
     //把每个activity转成xxx.class
     private static final DemoInfo[] demos = {
-            new DemoInfo(apple.class),
-            new DemoInfo(banana.class),
+            new DemoInfo(Tourist.class),
+            new DemoInfo(food.class),
             /*new DemoInfo(ThirdGameActivity.class),
             new DemoInfo(FourthGameActivity.class),
             new DemoInfo(FifthGameActivity.class),
