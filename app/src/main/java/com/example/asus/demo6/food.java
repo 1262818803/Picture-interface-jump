@@ -35,6 +35,7 @@ public class food extends AppCompatActivity {
 
         final int[] photo = new int[] { R.drawable.apple, R.drawable.banana, R.drawable.grape };
 
+
         List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 
@@ -69,7 +70,7 @@ public class food extends AppCompatActivity {
 
 
 
-        Lv.setAdapter(new SimpleAdapter(this, data, R.layout.food_item,new String[] { "photo", "name" }, new int[] { R.id.iv,R.id.tv_name }));
+        Lv.setAdapter(new SimpleAdapter(this, data, R.layout.food_item,new String[] { "photo", "name" }, new int[] { R.id.iv,R.id.tv_name}));
 
         Lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -85,6 +86,7 @@ public class food extends AppCompatActivity {
 
                 bundle.putString("message", message[arg2]);
 
+
                 Intent intent = new Intent();
 
                 intent.putExtras(bundle);
@@ -98,6 +100,7 @@ public class food extends AppCompatActivity {
             }
 
         });
+
 
     }
 }

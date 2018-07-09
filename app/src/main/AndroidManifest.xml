@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Tourist" />
         <activity android:name=".food" />
-        <activity android:name=".MoveFood"></activity>
+        <activity android:name=".MoveFood" />
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>
